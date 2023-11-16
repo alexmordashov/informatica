@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    float m;
+    int m;
     cout << "Введите количество метров: ";
     cin >> m;
     cout << "Количество километров: " << m/1000;
