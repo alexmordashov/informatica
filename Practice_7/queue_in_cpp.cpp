@@ -4,15 +4,6 @@
 using namespace std;
 
 void print_queue(queue<string> q1) {
-    //list<string> arr;
-    //for (int i = 0; i < q1.size(); i++) {
-    //    arr.push_back(q1.front());
-    //    q1.pop();
-    //}
-    //for (auto i : arr) {
-    //    cout << i;
-    //}
-    //cout << endl;
     while (!q1.empty()) {
         string a = q1.front().c_str();
         std::cout << a <<" ";
@@ -22,7 +13,7 @@ void print_queue(queue<string> q1) {
 }
 
 int main() {
-    queue<string> q; //vector arr;
+    queue<string> q;
     while (true) {
         string a;
         cout << "Что хотите сделать?\n1. Добавить элемент\n2. Извлечь элемент\n3. Ничего" << endl;
