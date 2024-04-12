@@ -105,12 +105,12 @@ int myBinSearch(vector<double> &mas, int &r, double x) {
     while (L <= R) {
         //cout << mas[q] << endl;
         q = (R + L) / 2;
-        if (mas[q] < x and abs(mas[q] - x) > 1e - 9)
-            L = q + 1;
-        else if (mas[q] > x and abs(mas[q] - x) > 1e - 9)
-            R = q - 1;
-        else
+        if (abs(mas[q] - x) > 1e - 9)
             return q;
+        else if (mas[q] < x)
+            L = q + 1;
+        else if (mas[q] > x)
+            R = q - 1;
         r++;
     }
     return -1;
